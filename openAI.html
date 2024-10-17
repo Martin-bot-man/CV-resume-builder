@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume builder</title>
+</head>
+<body>
+    <br>
+    <center>
+        <h2 class="head">Resume Builder open.AI</h2>
+        <h2 class="head2">version 0.2</h2>
+    </center>
+    <br>
+    <div class="box">
+        <!-- js code -->
+    <script>
+        let a = prompt('Enter your name: ') ;
+        let b = prompt('Enter your address: ') ;
+        let c = prompt('Enter your phone number: ') ;
+        let pt = parseInt(c) ;
+        let d = prompt('Enter your Email: ') ;
+        let uni = prompt('Enter your School name: ') ;
+
+        document.write("<h1>Name:<h1>"+a);
+        document.write('<br>');
+        document.write('<br>');
+
+        document.write("<h1>Address:<h1>"+b);
+        document.write('<br>');
+        document.write('<br>');
+
+        document.write("<h1>phone number:<h1>"+pt);
+        document.write('<br>');
+        document.write('<br>');
+
+        document.write("<h1>Email address:<h1>"+d);
+        document.write('<br>');
+        document.write('<br>');
+
+        document.write("<h1>Objective:<h1>"+a);
+        document.write('<h1>Highly motivated software engineer with a strong foundation in JavaScript seeking an entry-level position to contribute to innovative projects and develop my skills in a collaborative environment:<h1>');
+        document.write('<br>');
+        document.write('<br>');
+
+        document.write("<h1>Education:<h1>"+a);
+        document.write('<h1>BSc in Biotechnology and Microbiology:<h1>');
+        document.write('<br>');
+        document.write('<br>');
+
+        let choice = prompt("1) Python. 2)JavaScript. 3)python, JavaScript. 4)None \nEnter choice to select your skills");
+        if(choice==1){
+            document.write("<h1>I am a skilled Python programmer with a strong foundation in Python concepts, such as object-oriented programming, data structures, algorithms etc. I have experience working with popular Python libraries and frameworks, including  NumPy, Pandas, TensorFlow. My ability to write efficient, clean, and well-structured Python code allows me to effectively solve complex problems and develop robust applications.:<h1>");
+
+            document.write('<br>');
+
+        }
+        else if(choice==2){
+            document.write("<h1>I am a skilled JavaScript developer with a strong understanding of core concepts such as DOM manipulation, asynchronous programming (including promises and async/await), and event handling. I have experience working with popular JavaScript frameworks and libraries like [React, Angular, Vue], [Node.js], and [jQuery]. My ability to write efficient, maintainable, and cross-browser compatible JavaScript code allows me to build dynamic and interactive web applications.:<h1>");
+        }
+       else if(choice==3){
+            document.write("<h1>I am a skilled Python programmer with a strong foundation in Python concepts, such as object-oriented programming, data structures, algorithms etc. I have experience working with popular Python libraries and frameworks, including  NumPy, Pandas, TensorFlow. My ability to write efficient, clean, and well-structured Python code allows me to effectively solve complex problems and develop robust applications.:<h1>");
+                document.write('<br>');
+
+                document.write("<h1>I am a skilled JavaScript developer with a strong understanding of core concepts such as DOM manipulation, asynchronous programming (including promises and async/await), and event handling. I have experience working with popular JavaScript frameworks and libraries like [React, Angular, Vue], [Node.js], and [jQuery]. My ability to write efficient, maintainable, and cross-browser compatible JavaScript code allows me to build dynamic and interactive web applications.:<h1>");
+
+       }
+       else if(choice==4){
+        document.write('<br>');
+        }
+        else{
+            alert("choice invalid");
+        }
+       
+        
+    </script>
+    </div>
+    <style>
+        *{
+           margin: 0;
+           padding:0;
+         
+        }
+        body{
+          background-color:rgba(127,255,212,0.533) ;  
+          margin-left: 15px;
+          margin-right: 15px;
+          font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          font-size: 20px;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+        .head{
+            color:#000;
+            font-size:25px;
+        }
+        .head2{
+            color:#000;
+            font-size: 19px;
+        }
+        h1{
+            font-size: 20px;
+            color: white;
+        }
+        /* text-moving */
+        h1{
+         position:relative; 
+        }
+        h1::after{
+            content:"|";
+            position:absolute;
+            right:0;
+            color: white;
+            background-color:#0c0b14;
+            width: 100%;
+            animation:writing 13s ease-in forwards, blink 1s infinite;  
+        }
+        @keyframes writing {
+          to{
+            width: 0%;
+
+          }
+        }
+        @keyframes blink{
+            40%{
+                color:transparent;
+            }
+        }
+        .box{
+            margin:auto;
+            width:100%;
+            height: 100%;
+            background-color: #0c0b14;
+            padding-left:30px;
+            padding-top:50px;
+            color: white;
+
+        }
+    </style>
+</body>
+</html>

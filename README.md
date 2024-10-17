@@ -1,2 +1,2 @@
-# CV-resume-builder
-Resume/CV Builder JavaScript Project | HTML, CSS &amp; Vanilla JavaScript
+##CV-resume-builder
+I have developed a remarkable project, Resume Builder Open, an AI-powered resume builder that generates personalized resumes based on user input. Utilizing HTML, CSS, and JavaScript, I have crafted this responsive application, ensuring seamless functionality across various devices. 
